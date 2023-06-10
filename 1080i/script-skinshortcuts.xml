@@ -348,7 +348,7 @@
                             <param name="control" value="button" />
                             <description>End row action</description>
                             <onfocus>SetProperty(IsStandardSkinShortcut,1,Home)</onfocus>
-                            <onclick>RunScript(script.skinshortcuts,type=shortcuts&amp;showNone=True&amp;skinAction=widgetEndRowAction-$INFO[Container(211).ListItem.Property(labelID)])</onclick>
+                            <onclick>RunScript(script.skinshortcuts,type=shortcuts&amp;custom=True&amp;showNone=True&amp;skinAction=widgetEndRowAction-$INFO[Container(211).ListItem.Property(labelID)])</onclick>
                             <label>$LOCALIZE[31330]</label>
                             <label2>$INFO[container(9211).listitem.property(widgetOnDownAction)]</label2>
                             <visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
@@ -363,7 +363,7 @@
                             <param name="control" value="button" />
                             <description>End row action</description>
                             <onfocus>SetProperty(IsStandardSkinShortcut,1,Home)</onfocus>
-                            <onclick>RunScript(script.skinshortcuts,type=shortcuts&amp;showNone=True&amp;skinAction=menuOnUpAction-$INFO[Container(211).ListItem.Property(labelID)])</onclick>
+                            <onclick>RunScript(script.skinshortcuts,type=shortcuts&amp;custom=True&amp;showNone=True&amp;skinAction=menuOnUpAction-$INFO[Container(211).ListItem.Property(labelID)])</onclick>
                             <label>$LOCALIZE[31382]</label>
                             <label2>$INFO[container(9211).listitem.property(menuOnUpAction)]</label2>
                             <visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
